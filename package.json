@@ -1,0 +1,37 @@
+{
+  "name": "@patchhive/ai-local",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Localhost AI gateway for PatchHive products.",
+  "type": "module",
+  "bin": {
+    "patchhive-ai-local": "./src/cli.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "dev": "node ./src/cli.js",
+    "start": "node ./src/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patchhive/patchhive-ai-local.git"
+  },
+  "homepage": "https://github.com/patchhive/patchhive-ai-local",
+  "bugs": {
+    "url": "https://github.com/patchhive/patchhive-ai-local/issues"
+  },
+  "keywords": [
+    "patchhive",
+    "ai",
+    "gateway",
+    "codex",
+    "copilot"
+  ],
+  "dependencies": {
+    "@github/copilot": "^1.0.17",
+    "@github/copilot-sdk": "^0.2.1",
+    "@openai/codex-sdk": "^0.118.0"
+  }
+}
